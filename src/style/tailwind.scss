@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flex {
+    &-fullcenter {
+      @apply flex justify-center items-center;
+    }
+
+    &-seperate {
+      @apply flex justify-between items-center;
+    }
+  }
+
+  .container {
+    margin: 0 auto;
+    @apply mx-auto lg:max-w-[1024px] md:max-w-[800px] sm:max-w-[500px] max-w-[480px] flex-fullcenter;
+  }
+
+  .button {
+    @apply border-2 font-semibold text-sm rounded whitespace-nowrap cursor-pointer text-center backdrop-blur-sm md:w-auto inline-block w-full mx-auto px-8 py-3;
+    &-hell {
+      @apply border-red-500 text-red-500 bg-black-100 bg-opacity-0  hover:bg-opacity-15;
+    }
+  }
+  .bg {
+    &-fullcenter {
+      @apply bg-center bg-cover bg-no-repeat;
+    }
+    &-fullobject {
+      @apply object-center object-cover;
+    }
+  }
+  .navitem {
+    @apply transition text-sm font-semibold rounded px-3 py-2  bg-opacity-0 hover:bg-opacity-10 hover:bg-slate-500 hover:backdrop-blur-sm;
+  }
+  .link {
+    @apply underline hover:decoration-2;
+  }
+  .halfhalf {
+    @apply flex md:flex-row flex-col-reverse justify-center sm:gap-12 max-container;
+  }
+  .title {
+    @apply md:text-3xl text-xl font-bold;
+    &-sm {
+      @apply md:text-xl text-lg font-bold;
+    }
+    &-x {
+      @apply md:text-6xl text-4xl font-bold;
+    }
+  }
+  .para {
+    @apply md:text-sm text-xs;
+  }
+  .field {
+    @apply bg-slate-700 text-slate-200 border-0 text-sm rounded transition-all duration-100 focus-within:ring-1 focus-within:ring-blue-600 block w-full px-3;
+  }
+  .fullSection {
+    @apply h-screen w-full relative flex-fullcenter bg-fullcenter;
+
+    h2,
+    h1 {
+      @apply md:text-6xl text-4xl;
+    }
+    p {
+      @apply my-2 text-xs;
+    }
+    .linkBox {
+      @apply md:flex gap-5 md:mx-auto padding;
+    }
+  }
+  .label {
+    @apply text-slate-200 md:text-sm text-xs font-bold;
+  }
+}
+@layer utilities {
+  .padding {
+    @apply md:px-16 px-8 md:py-24 py-12;
+  }
+  .padding-container {
+    @apply lg:px-24 sm:px-16 px-8;
+  }
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+  .pagecenter {
+    @apply max-w-[800px] mx-auto pt-32 padding-x;
+    &-x {
+      @apply max-w-[1100px] mx-auto pt-32 padding-x;
+    }
+  }
+  .size-screen {
+    @apply w-screen h-screen;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+select {
+  &.field {
+    @apply py-2;
+  }
+}
+textarea {
+  &.field {
+    @apply py-2;
+  }
+}
+main {
+  @apply w-full h-screen overflow-y-hidden;
+}
