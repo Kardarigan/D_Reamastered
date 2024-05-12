@@ -63,10 +63,13 @@ const Home = () => {
             <Letter letterClass={letterClass} strArray={whoYou} idx={34} />
           </h1>
           <h2 className="cursor-default text-[$grayColor] text-xs tracking-[2px] animate-[fadeIn_1s_1.5s_backwards] my-5 mx-0">
-            <span className="transition-all hover:shadow">
+            <span className="transition-all hover:shadow text-slate-300 hover:text-slate-50">
               Front End Developer
             </span>{" "}
-            / <span className="transition-all hover:shadow">Freelancer</span>
+            /{" "}
+            <span className="transition-all hover:shadow text-slate-300 hover:text-slate-50">
+              Freelancer
+            </span>
           </h2>
           <div className="mt-12">
             <Link to="/contact" className="button">

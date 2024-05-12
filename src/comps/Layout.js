@@ -4,7 +4,7 @@ import { Sidebar } from "./Portal";
 const Layout = () => {
   return (
     <>
-      <div className="bg-slate-900 text-slate-50 h-screen ps-20">
+      <div className="bg-slate-900 text-slate-50 h-screen ps-16">
         <Sidebar />
         <span className="tags tags-top d-block">
           <span>&lt;html&gt;</span>

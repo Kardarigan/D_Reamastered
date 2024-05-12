@@ -3,12 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-  .max-container {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
   .contain {
-    @apply flex items-center h-screen lg:ps-12 sm:ps-8 ps-2;
+    @apply flex items-center h-screen lg:ps-12 px-8;
     h1 {
       @apply lg:text-5xl text-4xl font-bold;
     }
@@ -20,36 +16,12 @@
     &-fullcenter {
       @apply flex justify-center items-center;
     }
-
-    &-seperate {
-      @apply flex justify-between items-center;
-    }
   }
   .button {
     @apply text-red-400 text-sm whitespace-nowrap cursor-pointer px-5 py-3 rounded border-2 border-solid border-red-400 bg-slate-500 bg-opacity-0 hover:no-underline hover:bg-opacity-10;
   }
-  .bg {
-    &-fullcenter {
-      @apply bg-center bg-cover bg-no-repeat;
-    }
-    &-fullobject {
-      @apply object-center object-cover;
-    }
-  }
-  .navitem {
-    @apply transition text-sm font-semibold rounded px-3 py-2  bg-opacity-0 hover:bg-opacity-10 hover:bg-slate-500 hover:backdrop-blur-sm;
-  }
-  .link {
-    @apply underline hover:decoration-2;
-  }
-  .halfhalf {
-    @apply flex md:flex-row flex-col-reverse justify-center sm:gap-12 max-container;
-  }
-  .title {
-    @apply lg:text-5xl text-4xl font-bold;
-  }
   .field {
-    @apply bg-slate-700 text-slate-200 border-0 text-sm rounded transition-all duration-100 focus-within:ring-1 focus-within:ring-blue-600 block w-full px-3;
+    @apply w-full transition-all duration-[0.1s] text-sm bg-slate-900 border resize-none p-3 rounded border-solid border-slate-100 focus:shadow-[0_0_10px_0_white] focus:ring-0 focus:border-slate-100;
   }
 }
 

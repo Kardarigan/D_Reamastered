@@ -21,7 +21,7 @@ nav {
   }
 
   &-top {
-    top: 35px;
+    top: 3%;
 
     &-body {
       margin-left: 10px;
@@ -125,21 +125,3 @@ nav {
 }
 
 // ------------------------------[cube]
-// ----------------------------[skills]
-.skills {
-  &-list {
-    margin-top: 20px;
-
-    li {
-      width: 40%;
-      display: inline-block;
-      opacity: 0;
-
-      &::before {
-        content: "# ";
-      }
-    }
-  }
-}
-
-// ----------------------------[skills]
