@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/la-belle-aurore");
+
 $color_prime: #f3f4f4;
 $color_second: #4b79a1;
 $color_dark: #171a20;
@@ -8,15 +10,6 @@ $color_dark: #171a20;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: Arial, sans-serif;
-}
-
-body {
-  @apply bg-black-900 text-slate-50;
-}
-
-@font-face {
-  font-family: gotham;
-  src: url(../assets/1744-font.otf);
 }
 
 @mixin backgroundGradient($alpha) {
@@ -35,14 +28,8 @@ body {
 .allunset {
   all: unset !important;
 }
-.shadowAround {
-  box-shadow: inset 0px 0px 30px 30px rgba(black, 0.9);
-}
-.shadowFromTop {
-  background: linear-gradient(180deg, $color_dark -30%, transparent 100%);
-}
-.shadowFromBottom {
-  background: linear-gradient(0deg, $color_dark 0%, transparent 100%);
+.shadow {
+  text-shadow: 0px 0px 15px $color_prime;
 }
 .fakeBorderDark {
   box-shadow: 0 0 0 2px $color_dark inset;

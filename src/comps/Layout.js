@@ -1,14 +1,27 @@
 import { Outlet } from "react-router-dom";
-import { Navbar, Footer, Screwy } from "./Portal";
+import { Sidebar } from "./Portal";
 
 const Layout = () => {
   return (
     <>
-      <Navbar />
-      <div className="container">
+      <div className="bg-slate-900 text-slate-50 h-screen ps-20">
+        <Sidebar />
+        <span className="tags tags-top d-block">
+          <span>&lt;html&gt;</span>
+          <span className="tags-top-html">&lt;html&gt;</span>
+          <br />
+          <span className="tags-top-body">&lt;body&gt;</span>
+        </span>
+
         <Outlet />
+
+        <span className="tags tags-bottom d-block">
+          <span className="tags-bottom-body">&lt;/body&gt;</span>
+          <br />
+          <span>&lt;/html&gt;</span>
+          <span className="tags-bottom-html">&lt;/html&gt;</span>
+        </span>
       </div>
-      <Footer />
     </>
   );
 };

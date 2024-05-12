@@ -1,44 +1,77 @@
-import {} from "../comps/Portal";
+import { Letter } from "../comps/Portal";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+  const [letterClass, setLetterClass] = useState("LetterAnimation");
+  const helloThere = [
+    "H",
+    "e",
+    "l",
+    "l",
+    "o",
+    " ",
+    "t",
+    "h",
+    "e",
+    "r",
+    "e",
+    "!",
+  ];
+  const myName = ["I", "'", "m", " ", "D"];
+  const whoYou = [
+    "w",
+    "h",
+    "o",
+    " ",
+    "y",
+    "o",
+    "u",
+    " ",
+    "l",
+    "o",
+    "o",
+    "k",
+    "i",
+    "n",
+    "g",
+    " ",
+    "f",
+    "o",
+    "r",
+    ".",
+  ];
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setLetterClass("LetterAnimation-hover");
+    }, 6000);
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
   return (
-    <main className="flex items-center">
-      <div className="md:1/2">
-        <h1 className="title-x">
-          Hello there!
-          <br />
-          I'm D, just D
-          <br />
-          What can i do you for?
-        </h1>
-        <a
-          href="mailto:duckduckstay@hotmail.com"
-          className="button button-hell mt-5"
-        >
-          Say Hi <i className="fa-regular fa-hand-wave" />
-        </a>
-      </div>
-      <div className="md:1/2">
-        <div className="cube-container size-full">
-          {Array.from({ length: 121 }, (_, i) => (
-            <div className="trigger" key={i}></div>
-          ))}
-          <div className="monitor">
-            <div className="monitor_guide o-x"></div>
-            <div className="monitor_guide o-y"></div>
-            <div className="monitor_guide o-z"></div>
-            <div className="dice">
-              <div className="wall -no1">1</div>
-              <div className="wall -no2">2</div>
-              <div className="wall -no3">3</div>
-              <div className="wall -no4">4</div>
-              <div className="wall -no5">5</div>
-              <div className="wall -no6">6</div>
-            </div>
-          </div>
+    <>
+      <div className="flex items-center h-screen">
+        <div className="title">
+          <h1>
+            <Letter letterClass={letterClass} strArray={helloThere} idx={11} />
+            <br />
+            <Letter letterClass={letterClass} strArray={myName} idx={25} />
+            <br />
+            <Letter letterClass={letterClass} strArray={whoYou} idx={34} />
+          </h1>
+          <h2 className="cursor-default text-[$grayColor] text-xs tracking-[2px] animate-[fadeIn_1s_1.5s_backwards] my-5 mx-0">
+            <span className="hover:shadow">Front End Developer</span> /{" "}
+            <span className="hover:shadow">Freelancer</span>
+          </h2>
+          <Link to="/contact" className="button">
+            Say Hello <i className="fa-regular fa-hand-wave"></i>
+          </Link>
         </div>
       </div>
-    </main>
+    </>
   );
 };
 

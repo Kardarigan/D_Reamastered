@@ -1,31 +1,56 @@
-export const navLinks = [
+export const cubeFaces = [
+  "fa-python",
+  "fa-react",
+  "fa-js",
+  "fa-git",
+  "fa-html5",
+  "fa-css3",
+];
+
+export const sideIcons = [
   {
-    href: "./vehicles",
-    label: "VEHICLE",
+    icon: "fa-jedi",
+    label: "Home",
+    path: "/",
   },
   {
-    href: "./energy",
-    label: "ENERGY",
+    icon: "fa-book-journal-whills",
+    label: "About",
+    path: "/about",
   },
   {
-    href: "./charging",
-    label: "CHARGING",
+    icon: "fa-swords-laser",
+    label: "Skills",
+    path: "/skills",
   },
   {
-    href: "./discover",
-    label: "DISCOVER",
+    icon: "fa-starfighter",
+    label: "Contact",
+    path: "/contact",
   },
 ];
 
-export const navTools = [
-  { href: "./guid", class: "fal fa-question-circle" },
-  { href: "./language", class: "fal fa-globe" },
-  { href: "./account", class: "fa-light fa-circle-user" },
+export const sideLinks = [
+  {
+    icon: "fa-github",
+    link: "https://github.com/Kardarigan",
+  },
+  {
+    icon: "fa-medium",
+    link: "https://medium.com/@darigan",
+  },
 ];
 
-export const footLinks = [
-  { href: "./privacy", label: "Privacy & Legal" },
-  { href: "./contact", label: "Contact" },
-  { href: "./updates", label: "Get Updates" },
-  { href: "./locations", label: "Locations" },
+export const skills = [
+  "HTML5",
+  "CSS3",
+  "Javascript ES6+",
+  "JQuery",
+  "React.js",
+  "Pug",
+  "Sass",
+  "Bootstrap",
+  "Tailwind",
+  "Python",
+  "Django",
 ];

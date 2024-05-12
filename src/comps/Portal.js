@@ -1,7 +1,8 @@
-import Navbar from "./Commons/Navbar";
-import Footer from "./Commons/Footer";
-import Screwy from "./Commons/Screwy";
+import Sidebar from "./Commons/Sidebar";
 import Layout from "./Layout";
 import Home from "../pages/Home";
-
-export { Navbar, Footer, Screwy, Home, Layout };
+import About from "../pages/About";
+import Skills from "../pages/Skills";
+import Contact from "../pages/Contact";
+import Letter from "./Commons/Letter";
+export { Sidebar, Home, Layout, About, Skills, Contact, Letter };
