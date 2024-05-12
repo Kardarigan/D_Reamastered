@@ -53,8 +53,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex items-center h-screen">
-        <div className="title">
+      <div className="contain">
+        <div>
           <h1>
             <Letter letterClass={letterClass} strArray={helloThere} idx={11} />
             <br />
@@ -63,12 +63,16 @@ const Home = () => {
             <Letter letterClass={letterClass} strArray={whoYou} idx={34} />
           </h1>
           <h2 className="cursor-default text-[$grayColor] text-xs tracking-[2px] animate-[fadeIn_1s_1.5s_backwards] my-5 mx-0">
-            <span className="hover:shadow">Front End Developer</span> /{" "}
-            <span className="hover:shadow">Freelancer</span>
+            <span className="transition-all hover:shadow">
+              Front End Developer
+            </span>{" "}
+            / <span className="transition-all hover:shadow">Freelancer</span>
           </h2>
-          <Link to="/contact" className="button">
-            Say Hello <i className="fa-regular fa-hand-wave"></i>
-          </Link>
+          <div className="mt-12">
+            <Link to="/contact" className="button">
+              Say Hello <i className="fa-regular fa-hand-wave"></i>
+            </Link>
+          </div>
         </div>
       </div>
     </>

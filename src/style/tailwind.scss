@@ -7,7 +7,15 @@
     max-width: 1440px;
     margin: 0 auto;
   }
-
+  .contain {
+    @apply flex items-center h-screen lg:ps-12 sm:ps-8 ps-2;
+    h1 {
+      @apply lg:text-5xl text-4xl font-bold;
+    }
+  }
+  .shadow {
+    text-shadow: 0px 0px 15px $color_prime;
+  }
   .flex {
     &-fullcenter {
       @apply flex justify-center items-center;
@@ -17,9 +25,8 @@
       @apply flex justify-between items-center;
     }
   }
-
   .button {
-    @apply text-red-400 text-[15px] whitespace-nowrap cursor-pointer px-5 py-2.5 rounded-[5px] border-2 border-solid border-red-400 bg-slate-50 bg-opacity-0 hover:no-underline hover:bg-opacity-10;
+    @apply text-red-400 text-sm whitespace-nowrap cursor-pointer px-5 py-3 rounded border-2 border-solid border-red-400 bg-slate-500 bg-opacity-0 hover:no-underline hover:bg-opacity-10;
   }
   .bg {
     &-fullcenter {
@@ -39,7 +46,7 @@
     @apply flex md:flex-row flex-col-reverse justify-center sm:gap-12 max-container;
   }
   .title {
-    @apply lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold;
+    @apply lg:text-5xl text-4xl font-bold;
   }
   .field {
     @apply bg-slate-700 text-slate-200 border-0 text-sm rounded transition-all duration-100 focus-within:ring-1 focus-within:ring-blue-600 block w-full px-3;
