@@ -4,5 +4,16 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Skills from "../pages/Skills";
 import Contact from "../pages/Contact";
-import Letter from "./Commons/Letter";
-export { Sidebar, Home, Layout, About, Skills, Contact, Letter };
+import LetterAnimation from "./Commons/Letter";
+import Transition from "./Commons/Transition";
+
+export {
+  Sidebar,
+  Home,
+  Layout,
+  About,
+  Skills,
+  Transition,
+  Contact,
+  LetterAnimation,
+};

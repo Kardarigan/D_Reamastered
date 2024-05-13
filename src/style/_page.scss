@@ -125,3 +125,33 @@ nav {
 }
 
 // ------------------------------[cube]
+// ------------------[letter animation]
+@import "animate.css";
+
+.LetterAnimation {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.LetterAnimation-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+
+  &:hover {
+    animation: rubberBand 1s;
+  }
+}
+
+@for $i from 1 through 53 {
+  .LetterAnimation_#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}
+
+// ------------------[letter animation]

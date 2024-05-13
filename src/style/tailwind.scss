@@ -18,7 +18,7 @@
     }
   }
   .button {
-    @apply text-red-400 text-sm whitespace-nowrap cursor-pointer px-5 py-3 rounded border-2 border-solid border-red-400 bg-slate-500 bg-opacity-0 hover:no-underline hover:bg-opacity-10;
+    @apply text-red-400 text-sm whitespace-nowrap cursor-pointer px-5 py-2 rounded border-2 border-solid border-red-400 bg-slate-500 bg-opacity-0 hover:no-underline hover:bg-opacity-10;
   }
   .field {
     @apply w-full transition-all duration-[0.1s] text-sm bg-slate-900 border resize-none p-3 rounded border-solid border-slate-100 focus:shadow-[0_0_10px_0_white] focus:ring-0 focus:border-slate-100;

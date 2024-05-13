@@ -1,8 +1,15 @@
-const Letter = ({ letterClass, strArray, idx }) => {
+import { useState } from "react";
+
+const LetterAnimation = ({ strArray, idx = 1 }) => {
+  const [letterClass, setLetterClass] = useState("text-animate");
+
   return (
     <span>
       {strArray.map((char, i) => (
-        <span key={char + i} className={`${letterClass} _${i + idx}`}>
+        <span
+          key={char + i}
+          className={`LetterAnimation ${letterClass} _${i + idx}`}
+        >
           {char}
         </span>
       ))}
@@ -10,4 +17,4 @@ const Letter = ({ letterClass, strArray, idx }) => {
   );
 };
 
-export default Letter;
+export default LetterAnimation;

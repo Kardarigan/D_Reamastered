@@ -1,9 +1,9 @@
-import { Letter } from "../comps/Portal";
-import React, { useEffect, useState } from "react";
+import { useScroll } from "framer-motion";
+import { LetterAnimation, Transition } from "../comps/Portal";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState("LetterAnimation");
   const helloThere = [
     "H",
     "e",
@@ -42,32 +42,24 @@ const Home = () => {
     ".",
   ];
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setLetterClass("LetterAnimation-hover");
-    }, 6000);
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
-
   return (
-    <>
+    <Transition>
       <div className="contain">
         <div>
+          {" "}
           <h1>
-            <Letter letterClass={letterClass} strArray={helloThere} idx={11} />
+            <LetterAnimation strArray={helloThere} />
             <br />
-            <Letter letterClass={letterClass} strArray={myName} idx={25} />
+            <LetterAnimation strArray={myName} idx={12} />
             <br />
-            <Letter letterClass={letterClass} strArray={whoYou} idx={34} />
+            <LetterAnimation strArray={whoYou} idx={18} />
           </h1>
-          <h2 className="cursor-default text-[$grayColor] text-xs tracking-[2px] animate-[fadeIn_1s_1.5s_backwards] my-5 mx-0">
-            <span className="transition-all hover:shadow text-slate-300 hover:text-slate-50">
+          <h2 className="cursor-default tracking-[0.5em] text-slate-400 text-xs my-5">
+            <span className="transition-all hover:shadow hover:text-slate-50">
               Front End Developer
             </span>{" "}
             /{" "}
-            <span className="transition-all hover:shadow text-slate-300 hover:text-slate-50">
+            <span className="transition-all hover:shadow hover:text-slate-50">
               Freelancer
             </span>
           </h2>
@@ -78,7 +70,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </>
+    </Transition>
   );
 };
 

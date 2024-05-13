@@ -1,28 +1,15 @@
 import { useEffect, useState } from "react";
 import { skills } from "../Constants";
-import { Letter } from "../comps/Portal";
+import { LetterAnimation, Transition } from "../comps/Portal";
 
 const Skills = () => {
-  const [letterClass, setLetterClass] = useState("LetterAnimation");
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setLetterClass("LetterAnimation-hover");
-    }, 3000);
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
-
   return (
-    <>
+    <Transition>
       <div className="contain">
         <div className="md:w-1/2">
           <h1>
-            <Letter
+            <LetterAnimation
               strArray={["M", "y", " ", "S", "k", "i", "l", "l", "s"]}
-              letterClass={letterClass}
-              idx={11}
             />
           </h1>
           <p className="mt-5 text-justify">
@@ -34,7 +21,7 @@ const Skills = () => {
           </p>
           <br />
           <h4>Here are technologies I'm working with :</h4>
-          <ul className="mt-5 text-sm grid grid-cols-2 gap-y-3">
+          <ul className="mt-5 text-sm grid grid-cols-2 gap-y-3 max-w-80">
             {skills.map((skill, index) => (
               <li
                 key={index}
@@ -46,7 +33,7 @@ const Skills = () => {
           </ul>
         </div>
       </div>
-    </>
+    </Transition>
   );
 };
 
