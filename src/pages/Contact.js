@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { LetterAnimation, Transition } from "../comps/Portal";
 
 const Contact = () => {

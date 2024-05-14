@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import lcLogo from "../../assets/images/lightCubeLogo.png";
+import lcLogo from "../../assets/lightCubeLogo.png";
 import { sideIcons, sideLinks } from "../../Constants";
 
 const Sidebar = () => {

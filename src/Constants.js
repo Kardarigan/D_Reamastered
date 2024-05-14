@@ -1,6 +1,6 @@
 export const cubeFaces = [
   "fa-python",
-  "fa-react",
+  "fa-react rotate-90",
   "fa-js",
   "fa-git",
   "fa-html5",

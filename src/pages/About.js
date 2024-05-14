@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
 import { LetterAnimation, Transition } from "../comps/Portal";
 import { cubeFaces } from "../Constants";
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState("LetterAnimation");
-
   return (
     <Transition>
       <div className="contain">

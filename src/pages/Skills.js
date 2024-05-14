@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { skills } from "../Constants";
 import { LetterAnimation, Transition } from "../comps/Portal";
 

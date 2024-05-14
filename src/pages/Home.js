@@ -1,7 +1,6 @@
-import { useScroll } from "framer-motion";
+import R2D2 from "../comps/Commons/R2D2";
 import { LetterAnimation, Transition } from "../comps/Portal";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 const Home = () => {
   const helloThere = [
@@ -44,8 +43,8 @@ const Home = () => {
 
   return (
     <Transition>
-      <div className="contain">
-        <div>
+      <div className="contain flex">
+        <div className="md:w-1/2">
           {" "}
           <h1>
             <LetterAnimation strArray={helloThere} />
@@ -68,6 +67,9 @@ const Home = () => {
               Say Hello <i className="fa-regular fa-hand-wave"></i>
             </Link>
           </div>
+        </div>
+        <div className="w-1/2 flex-fullcenter max-md:hidden">
+          <R2D2 />
         </div>
       </div>
     </Transition>
