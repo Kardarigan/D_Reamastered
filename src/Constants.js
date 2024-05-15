@@ -32,12 +32,19 @@ export const sideIcons = [
 
 export const sideLinks = [
   {
-    icon: "fa-github",
+    icon: "fas fa-file",
     link: "https://github.com/Kardarigan",
+    title: "My Resume PDF",
   },
   {
-    icon: "fa-medium",
+    icon: "fab fa-medium",
     link: "https://medium.com/@darigan",
+    title: "My Meduim Account",
+  },
+  {
+    icon: "fab fa-github",
+    link: "https://github.com/Kardarigan",
+    title: "Me in GitHub",
   },
 ];
 

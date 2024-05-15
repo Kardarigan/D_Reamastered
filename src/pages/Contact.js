@@ -90,18 +90,27 @@ const Contact = () => {
                   ></textarea>
                 </li>
               </ul>
-              <input type="submit" className="button mt-3" value="Send" />
+              <input type="submit" className="button mt-3 py-2" value="Send" />
             </form>
           </div>
         </div>
-
-        <p
-          className={`fixed bottom-[1vw] right-[1vh] px-5 py-3 rounded transition-all duration-500 bg-slate-50 text-slate-900 font-bold max-md:text-sm ${
-            showMessage ? "right-[1vw] opacity-100" : "right-[-100%] opacity-0"
+        <div
+          className={`fixed bottom-[1vw] right-[1vh] px-5 py-4 rounded transition-all displayTrans duration-500 bg-slate-50 text-slate-900 font-bold md:text-sm text-xs ${
+            showMessage
+              ? "right-[1vw] opacity-100 visible"
+              : "right-[-100%] opacity-0 invisible"
           }`}
         >
-          {message}
-        </p>
+          <p className="text-slate-900">{message}</p>
+          <button
+            className="absolute top-0 left-[5px]"
+            onClick={() => {
+              setShowMessage(false);
+            }}
+          >
+            <i className="fas fa-xmark" />
+          </button>
+        </div>
       </div>
     </Transition>
   );
