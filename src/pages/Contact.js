@@ -6,7 +6,8 @@ const Contact = () => {
   const title = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"];
 
   const form = useRef();
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("Everything is Awsome");
+  const [showMessage, setShowMessage] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,15 +18,17 @@ const Contact = () => {
       })
       .then(
         () => {
-          setMessage("Your Message Sent");
+          setShowMessage(true);
+          setMessage("Your Message Sent!");
           setTimeout(() => {
-            setMessage(null);
+            setShowMessage(false);
           }, 2000);
         },
         (error) => {
-          setMessage("Something is Wrong here");
+          setShowMessage(true);
+          setMessage("Something is Wrong here!?");
           setTimeout(() => {
-            setMessage(null);
+            setShowMessage(false);
           }, 2000);
         }
       );
@@ -91,15 +94,14 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        {message && (
-          <p
-            className={`fixed bottom-[1vw] right-[1vh] px-5 py-3 rounded transition-all bg-slate-100 text-slate-900 font-bold ${
-              message ? "right-[1vw]" : "right-[-100%]"
-            }`}
-          >
-            {message}
-          </p>
-        )}
+
+        <p
+          className={`fixed bottom-[1vw] right-[1vh] px-5 py-3 rounded transition-all duration-500 bg-slate-50 text-slate-900 font-bold max-md:text-sm ${
+            showMessage ? "right-[1vw] opacity-100" : "right-[-100%] opacity-0"
+          }`}
+        >
+          {message}
+        </p>
       </div>
     </Transition>
   );
