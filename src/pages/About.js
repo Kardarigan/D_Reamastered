@@ -12,8 +12,9 @@ const About = () => {
             />
           </h1>
           <p className="mt-5 text-justify">
-            I'm a Web Developer from somewhere in Iran. I'm interested in
-            building websites from scratch for people around the world.
+            I'm Hossain but you can call me jsut D as other people. I'm a Web
+            Developer from somewhere in Persia. Interested in building websites
+            from scratch for people around the globe.
             <br />
             <br />
             In the beginning, I learned coding for building simple websites and

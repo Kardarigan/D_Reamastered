@@ -68,7 +68,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="w-1/2 flex-fullcenter max-md:hidden">
+        <div className="w-1/2 flex-fullcenter max-md:hidden relative">
           <R2D2 />
         </div>
       </div>

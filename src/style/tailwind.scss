@@ -26,45 +26,6 @@
 }
 
 @layer utilities {
-  .padding {
-    @apply md:px-16 px-8 md:py-24 py-12;
-  }
-  .padding-container {
-    @apply lg:px-24 sm:px-16 px-8;
-  }
-  .padding-x {
-    @apply sm:px-16 px-8;
-  }
-
-  .padding-y {
-    @apply sm:py-24 py-12;
-  }
-
-  .padding-l {
-    @apply sm:pl-16 pl-8;
-  }
-
-  .padding-r {
-    @apply sm:pr-16 pr-8;
-  }
-
-  .padding-t {
-    @apply sm:pt-24 pt-12;
-  }
-
-  .padding-b {
-    @apply sm:pb-24 pb-12;
-  }
-
-  .info-text {
-    @apply font-montserrat text-slate-gray text-lg leading-7;
-  }
-  .pagecenter {
-    @apply max-w-[800px] mx-auto pt-32 padding-x;
-    &-x {
-      @apply max-w-[1100px] mx-auto pt-32 padding-x;
-    }
-  }
   .size-screen {
     @apply w-screen h-screen;
   }
@@ -76,14 +37,4 @@ h4,
 h5,
 h6 {
   @apply font-bold;
-}
-select {
-  &.field {
-    @apply py-2;
-  }
-}
-textarea {
-  &.field {
-    @apply py-2;
-  }
 }
