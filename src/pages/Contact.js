@@ -42,7 +42,7 @@ const Contact = () => {
           </h1>
           <p className="max-w-[500px]">
             Here is a Form to get in touch with me. but if you don't like this
-            kind of thing, just like in the old time{" "}
+            kind of thing, just like the old time{" "}
             <a
               href="mailto:duckduckstay@hotmail.com"
               className="underline hover:decoration-2"
