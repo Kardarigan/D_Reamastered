@@ -40,9 +40,9 @@ const Contact = () => {
           <h1>
             <LetterAnimation strArray={title} />
           </h1>
-          <p>
-            Here is a Form to get in tuch with me. also if you don't like this
-            kind of thing, just like old time{" "}
+          <p className="max-w-[500px]">
+            Here is a Form to get in touch with me. but if you don't like this
+            kind of thing, just like in the old time{" "}
             <a
               href="mailto:duckduckstay@hotmail.com"
               className="underline hover:decoration-2"
