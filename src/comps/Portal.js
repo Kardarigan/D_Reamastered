@@ -6,6 +6,7 @@ import Skills from "../pages/Skills";
 import Contact from "../pages/Contact";
 import LetterAnimation from "./Commons/Letter";
 import Transition from "./Commons/Transition";
+import Navigator from "./Commons/Navigator";
 
 export {
   Sidebar,
@@ -16,4 +17,5 @@ export {
   Transition,
   Contact,
   LetterAnimation,
+  Navigator,
 };

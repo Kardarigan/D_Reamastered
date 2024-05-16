@@ -14,11 +14,6 @@ $color_dark: #171a20;
 body {
   overflow: hidden;
 }
-
-.allunset {
-  all: unset !important;
-}
-
 .displayTrans {
   transition: visibility 1s, opacity 0.2s linear;
 }
