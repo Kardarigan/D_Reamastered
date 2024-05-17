@@ -7,7 +7,7 @@ const Contact = () => {
 
   const form = useRef();
   const [message, setMessage] = useState("Everything is Awsome");
-  const [showMessage, setShowMessage] = useState(false);
+  const [showMessage, setShowMessage] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -95,15 +95,14 @@ const Contact = () => {
           </div>
         </div>
         <div
-          className={`fixed bottom-[1vw] right-[1vh] px-5 py-4 rounded transition-all displayTrans duration-500 bg-slate-50 text-slate-900 font-bold md:text-sm text-xs ${
+          className={`fixed bottom-[1vw] right-[1vh] displayTrans duration-500 message ${
             showMessage
               ? "right-[1vw] opacity-100 visible"
               : "right-[-100%] opacity-0 invisible"
           }`}
         >
-          <p className="text-slate-900">{message}</p>
+          <p>{message}</p>
           <button
-            className="absolute top-0 left-[5px]"
             onClick={() => {
               setShowMessage(false);
             }}

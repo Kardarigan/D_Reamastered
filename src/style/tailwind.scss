@@ -4,7 +4,7 @@
 
 @layer components {
   .contain {
-    @apply flex items-center h-[90vh] lg:ps-12 pe-5;
+    @apply flex items-center sm:h-screen h-[90vh] lg:ps-12 pe-5;
     h1 {
       @apply lg:text-5xl text-3xl font-bold;
     }
@@ -25,6 +25,15 @@
   }
   .field {
     @apply w-full transition-all duration-[0.1s] text-sm bg-slate-900 border resize-none p-3 rounded border-solid border-slate-100 focus:shadow-[0_0_10px_0_white] focus:ring-0 focus:border-slate-100;
+  }
+  .message {
+    @apply bg-slate-50 text-slate-400 px-5 py-4 rounded z-40 md:text-sm text-xs;
+    p {
+      @apply font-mono font-bold;
+    }
+    button {
+      @apply absolute top-0 left-[5px];
+    }
   }
 }
 
