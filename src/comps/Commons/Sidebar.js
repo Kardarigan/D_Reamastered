@@ -29,28 +29,15 @@ const Sidebar = () => {
       <ul className="flex flex-col items-center">
         {sideLinks.map((item, index) => (
           <li key={index}>
-            {item.download ? (
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-slate-300"
-                href={item.link}
-                title={item.title}
-                download
-              >
-                <i className={item.icon} />
-              </a>
-            ) : (
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-slate-300"
-                href={item.link}
-                title={item.title}
-              >
-                <i className={item.icon} />
-              </a>
-            )}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-slate-300"
+              href={item.link}
+              title={item.title}
+            >
+              <i className={item.icon} />
+            </a>
           </li>
         ))}
       </ul>

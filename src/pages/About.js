@@ -12,7 +12,7 @@ const About = () => {
             />
           </h1>
           <p className="mt-5 text-justify">
-            I'm Hossain but you can call me jsut D as other people. I'm a Web
+            I'm Hossain but you can call me just D as other people. I'm a Web
             Developer from somewhere in Persia. Interested in building websites
             from scratch for people around the globe.
             <br />
@@ -21,8 +21,9 @@ const About = () => {
             terminal apps for automation my life and more for fun.
             <br />
             <br />
-            After a few years, today I'm ready to build real great websites
-            using popular languages and technologies for all the customers.
+            After a couple of years, today I'm ready to build real great
+            websites using popular languages and technologies for all the
+            customers.
             <br />
             <br />
           </p>

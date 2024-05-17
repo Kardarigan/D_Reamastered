@@ -69,7 +69,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-1/2 flex-fullcenter max-md:hidden relative">
-          <R2D2 />
+          {/* <R2D2 /> */}
         </div>
       </div>
     </Transition>

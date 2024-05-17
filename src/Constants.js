@@ -1,3 +1,5 @@
+import Resume_PDF from "./assets/Resume.pdf";
+
 export const cubeFaces = [
   "fa-python",
   "fa-react rotate-90",
@@ -33,18 +35,18 @@ export const sideIcons = [
 export const sideLinks = [
   {
     icon: "fas fa-file",
-    link: "https://github.com/Kardarigan",
+    link: Resume_PDF,
     title: "My Resume PDF",
-  },
-  {
-    icon: "fab fa-medium",
-    link: "https://medium.com/@darigan",
-    title: "My Meduim Account",
   },
   {
     icon: "fab fa-github",
     link: "https://github.com/Kardarigan",
     title: "Me in GitHub",
+  },
+  {
+    icon: "fab fa-medium",
+    link: "https://medium.com/@darigan",
+    title: "My Meduim Account",
   },
 ];
 
@@ -56,8 +58,8 @@ export const skills = [
   "React.js",
   "Pug",
   "Sass",
-  "Bootstrap",
   "Tailwind",
+  "Bootstrap",
   "Python",
   "Django",
 ];
