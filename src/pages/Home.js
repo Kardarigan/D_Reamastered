@@ -1,4 +1,3 @@
-import R2D2 from "../comps/Commons/R2D2";
 import { LetterAnimation, Transition } from "../comps/Portal";
 import { Link } from "react-router-dom";
 
